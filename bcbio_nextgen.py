@@ -185,7 +185,7 @@ def _sanity_check_args(args):
 if __name__ == '__main__':
     # sys.argv.extend(['upgrade' ,  '--tooldir', '/usr/local', '--genomes', 'GRCh37', '--aligners', 'bwa', '--aligners', 'bowtie2', '--data'])
 
-    sys.argv.extend(['-w', 'template', 'gatk-variant', 'project1', 'sample1.bam', 'sample2_1.fq', 'sample2_2.fq'])
+    sys.argv.extend(['-w', 'template', r'D:\python-projects\my_bcbio\config\gatk-variant.yaml', 'project1', 'sample1.bam', 'sample2_1.fq', 'sample2_2.fq'])
     # sys.argv.extend([ '-h'])
 
     kwargs = parse_cl_args(sys.argv[1:])
